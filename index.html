@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/index.css" rel="stylesheet">
+    <!-- Adobe Font Macula Line -->
+    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
+    <!-- Adobe Font Gill Sans Nova UltraBold -->
+    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
+    <!-- Gill Sans Nova Deco Regular -->
+    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
+    <!-- Gill Sans Nova Inline Bold -->
+    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
+    <!-- Gill Sans Nova Condensed Book -->
+    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
+    <!-- Gill Sans Nova Condensed Light -->
+    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
+    <!-- Gill Sans Nova Shadowed Outline -->
+    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
+    <!-- GSAP CDN's -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EaselPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/PixiPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js"></script>
+    <title>JRWebbJr | Portfolio</title>
+    <script>
+        tailwind.config = {
+          theme: {
+              colors: {
+                'eerie': '#191516',
+                'jet': '#2C2C2C',
+                'xanadu': '#708D81',
+                'mint-cream': '#e1eee9',
+                'terra': '#D57A66',
+                'may-green': '#6A994E',
+              },
+            fontFamily: {
+                macula: ['macula-line', 'sans-serif'],
+                outline: ['gill-sans-nova-shadowed-outl','sans-serif'],
+                inline: ['gill-sans-nova-deco','sans-serif'],
+                deco: ['gill-sans-nova-deco','sans-serif'],
+                ultrabold: ['gill-sans-nova','sans-serif'],
+                book: ['gill-sans-nova-condensed','sans-serif']
+                },
+            extend: {}
+          }
+        }
+      </script>
+    
 </head>
-<body>
-    <header>Joe Webb Jr</header>
+<body class="bg-jet flex w-screen h-screen">
+    <header class="w-[130px] h-full flex flex-wrap break-all items-center pl-10 text-9xl font-macula text-may-green drop-shadow-2xl">Joe &nbsp; Webb</header>
+    <section class="w-sreen h-full flex">
+        <div class="h-full w-[40vw] m-40">
+            <h1 class="text-terra font-ultrabold text-9xl">About Me</h1>
+        </div>
+    </section>
 </body>
 </html>

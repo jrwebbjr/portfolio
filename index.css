@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Macula Font
+
+font-family: macula-line, sans-serif;
+font-weight: 400;
+font-style: normal; */
+
+
+/* Gill Sans Nova UltraBold */
+
+/* font-family: gill-sans-nova,sans-serif;
+font-weight: 900;
+font-style: normal; */
+
+
+/* Gill Sans Nova Deco Regular */
+
+/* font-family: gill-sans-nova-deco,sans-serif;
+font-weight: 400;
+font-style: normal; */
+
+
+/* Gill Sans Nova Inline Bold */
+
+/* font-family: gill-sans-nova-inline,sans-serif;
+font-weight: 700;
+font-style: normal; */
+
+
+/* Gill Sans Nova Condensed Book */
+
+/* font-family: gill-sans-nova-condensed, sans-serif;
+font-weight: 400;
+font-style: normal; */
+
+
+/* Gill Sans Nova Shadowed Outline */
+
+/* font-family: gill-sans-nova-shadowed-outl,sans-serif;
+font-weight: 400;
+font-style: normal; */
