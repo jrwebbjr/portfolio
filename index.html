@@ -9,43 +9,25 @@
     <link href="/index.css" rel="stylesheet">
     <!-- Adobe Font Macula Line -->
     <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
-    <!-- Adobe Font Gill Sans Nova UltraBold -->
-    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
-    <!-- Gill Sans Nova Deco Regular -->
-    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
-    <!-- Gill Sans Nova Inline Bold -->
-    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
-    <!-- Gill Sans Nova Condensed Book -->
-    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
-    <!-- Gill Sans Nova Condensed Light -->
-    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
-    <!-- Gill Sans Nova Shadowed Outline -->
-    <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
-    <!-- GSAP CDN's -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Observer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EaselPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/PixiPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js"></script>
+    
     <title>JRWebbJr | Portfolio</title>
     <script>
         tailwind.config = {
           theme: {
+              backgroundImage: {
+                'hs': "url('/public/portfoliohs.jpg')"
+              },
               colors: {
                 'eerie': '#191516',
                 'jet': '#2C2C2C',
                 'xanadu': '#708D81',
                 'mint-cream': '#e1eee9',
-                'terra': '#D57A66',
+                'carrot': '#DC9447',
                 'may-green': '#6A994E',
+                'french-blue': '#2374AB',
               },
             fontFamily: {
+                mendl: ['mendl-sans-dusk', 'sans-serif'],
                 macula: ['macula-line', 'sans-serif'],
                 outline: ['gill-sans-nova-shadowed-outl','sans-serif'],
                 inline: ['gill-sans-nova-deco','sans-serif'],
@@ -59,12 +41,29 @@
       </script>
     
 </head>
-<body class="bg-jet flex w-screen h-screen">
-    <header class="w-[130px] h-full flex flex-wrap break-all items-center pl-10 text-9xl font-macula text-may-green drop-shadow-2xl">Joe &nbsp; Webb</header>
-    <section class="w-sreen h-full flex">
-        <div class="h-full w-[40vw] m-40">
-            <h1 class="text-terra font-ultrabold text-9xl">About Me</h1>
+<body class="bg-jet flex">
+    <header class=" w-[130px] h-screen flex flex-wrap break-all items-center sticky top-0 ml-10 text-9xl font-macula text-may-green drop-shadow-2xl">Joe &nbsp; Webb
+    </header>
+    <section class="flex ml-[60px] pl-[100px] justify-center pt-20 flex-col">
+        <div class="flex justify-center flex-col h-screen">
+            <h1 class="text-carrot font-mendl text-7xl">About Me</h1>
+            <div class="bg-french-blue flex w-[200px] h-[1px]"></div>
+            <p class="text-mint-cream font-book text-[50px] w-[50vw]">I am a fullstack software engineer focusing mainly on design and front end development. When I am not behind a computer screen I enjoy photography, the great outdoors, and of course spending time with my family. </p>
+        </div>
+        <div flex justify-center flex-col h-screen>
+            <h1 class="text-carrot font-mendl text-7xl">Skills</h1>
+            <div class="bg-french-blue flex w-[200px] h-[1px]"></div>
+            <p class="text-mint-cream font-book text-[50px] w-[50vw]">I am skilled in JavaScript, HTML, CSS, NodeJs, ExpressJs, React, Tailwind CSS, Bootstrap, MongoDB, Mongoose, Git, Github, NoSQL Databases, Agile Scrum Methodologies, and more to come in the future.</p>
         </div>
     </section>
+    <div class="w-[900px] h-screen bg-hs bg-cover bg-left sticky top-0 border-l-[4px] border-french-blue ring-offset-carrot ring-offset-0 ring backdrop-hue-rotate-180">
+        <div class="w-[450px] h-[34vh] bg-carrot/30 backdrop-contrast-50"></div>
+        <div class="ml-[450px] w-[450px] h-[34vh] bg-french-blue/30 backdrop-blur"></div>
+        <div class="w-[450px] h-[34vh] bg-may-green/30 backdrop-contrast-50"></div> 
+    </div>
 </body>
 </html>
+
+
+
+
