@@ -11,11 +11,16 @@
     <link rel="stylesheet" href="https://use.typekit.net/pie8edv.css">
     
     <title>JRWebbJr | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/public/portfoliofavicon.jpg">
     <script>
         tailwind.config = {
           theme: {
               backgroundImage: {
-                'hs': "url('/public/portfoliohs.jpg')"
+                'hs': "url('/public/portfoliohs.jpg')",
+                'retro': "url('/public/Retro.jpg')",
+                'apply': "url('/public/apply.jpg')",
+                'emoji': "url('/public/emoji.jpg')",
+                'github': "url('/public/icons8-github.gif')",
               },
               colors: {
                 'eerie': '#191516',
@@ -25,6 +30,7 @@
                 'carrot': '#DC9447',
                 'may-green': '#6A994E',
                 'french-blue': '#2374AB',
+                'white': '#FFFFFF',
               },
             fontFamily: {
                 mendl: ['mendl-sans-dusk', 'sans-serif'],
@@ -42,23 +48,77 @@
     
 </head>
 <body class="bg-jet flex">
-    <header class=" w-[130px] h-screen flex flex-wrap break-all items-center sticky top-0 ml-10 text-9xl font-macula text-may-green drop-shadow-2xl hover:animate-bounce">Joe &nbsp; Webb
+    <header class=" w-[100px] h-full flex break-all items-center sticky top-10 ml-10 2xl:text-[110px] lg:text-7xl font-macula text-may-green drop-shadow-2xl shadow-may-green hover:animate-pulse">Joe &nbsp; Webb
     </header>
-    <section class="flex ml-[60px] pl-[100px] justify-center pt-20 flex-col">
+    <section class="flex mr-10 pr-[50px] pl-[100px] justify-center pt-20 flex-col h-max">
         <div class="flex justify-center flex-col h-screen">
             <h1 class="text-carrot font-mendl text-7xl">About Me</h1>
-            <div class="bg-french-blue flex w-[200px] h-[1px] animate-pulse"></div>
-            <p class="text-mint-cream font-book text-[50px] w-[50vw]">I am a fullstack software engineer focusing mainly on design and front end development. When I am not behind a computer screen I enjoy photography, the great outdoors, and of course spending time with my family. </p>
+            <div class="bg-french-blue flex w-[671px] h-[2px] animate-pulse mt-2"></div>
+            <p class="text-mint-cream font-book text-[50px] w-[50vw]">I am a fullstack software engineer focusing mainly on design and front end development. When I am not behind a computer screen I enjoy being creative. I enjoyu making art, photography, music, and woodworking. I also enjoy the great outdoors and of course spending time with my family. </p>
         </div>
-        <div flex justify-center flex-col h-screen>
+        <div class="flex justify-center flex-col h-screen">
             <h1 class="text-carrot font-mendl text-7xl">Skills</h1>
-            <div class="bg-french-blue flex w-[200px] h-[1px] animate-pulse"></div>
-            <p class="text-mint-cream font-book text-[50px] w-[50vw]">I am skilled in JavaScript, HTML, CSS, NodeJs, ExpressJs, React, Tailwind CSS, Bootstrap, MongoDB, Mongoose, Git, Github, NoSQL Databases, Agile Scrum Methodologies, and more to come in the future.</p>
+            <div class="bg-french-blue flex w-[671px] h-[2px] animate-pulse mt-2"></div>
+            <p class="text-mint-cream font-book text-[50px] w-[50vw]">I am skilled in JavaScript, HTML, CSS, NodeJs, ExpressJs, React, Tailwind CSS, Bootstrap, MongoDB, Mongoose, Git, Github, NoSQL Databases, Agile Scrum Methodologies... and much, much more to come in the future.</p>
         </div>
+        <div class="flex justify-center flex-col h-[150vh]">
+            <h1 class="text-carrot font-mendl text-7xl">Projects</h1>
+            <div class="bg-french-blue flex w-[671px] h-[2px] animate-pulse mt-2"></div>
+
+            <div class="flex justify-around">
+                <div class="text-mint-cream font-book text-[50px] flex-col pt-10">
+                    <div class="bg-white w-[300px] h-[700px] flex-col item-center p-[25px]">
+                        <img href="" class="bg-apply bg-contain w-[250px] h-[250px] cursor-pointer "/>
+                        <div class="flex justify-center items-center bg-french-blue w-[250px] h-[2px] mt-[25px] animate-pulse"></div>
+                        <article class="flex justify-center items-center text-eerie text-[24px]">Ap-ply is a place you can go to save application and interview info from tech companies. You can keep track of who you have interviewed with as well as any notes about assessments or interview processes. Ap-ply was built with JavaScript, NodeJS, ExpressJS, ReactJSX, MongoDB, Mongoose, Heroku, HTML, CSS, Tailwind CSS and GSAP.</article>
+                        <div class="flex justify-center w-[250px] mt-2">
+                            <button class="flex justify-center items-center bg-github bg-contain w-[50px] h-[50px]" onclick="window.location.href='https://github.com/jrwebbjr/interview-tracker-app';"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-mint-cream font-book text-[50px]flex flex-col pt-10">
+                    <div class="bg-white w-[300px] h-[700px] flex-col item-center p-[25px]">
+                        <img href="" class="bg-emoji bg-contain w-[250px] h-[250px] cursor-pointer "/>
+                        <div class="flex justify-center items-center bg-french-blue w-[250px] h-[2px] mt-[25px] animate-pulse"></div>
+                        <article class="flex justify-center items-center text-eerie text-[24px]">Emoji-Matchup is a game of memory where you can match pairs of emojis built with HTML, CSS, and JavaScript.</article>
+                        <div class="flex justify-center w-[250px] mt-[225px]">
+                            <button class="flex justify-center items-center bg-github bg-contain w-[50px] h-[50px]" onclick="window.location.href='https://github.com/jrwebbjr/Matching-Game/tree/master';"></button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="text-mint-cream font-book text-[50px] flex flex-col pt-10">
+                    <div class="bg-white w-[300px] h-[700px] flex-col item-center p-[25px]">
+                        <img href="https://joe-retrospective.herokuapp.com/" class="bg-retro bg-contain w-[250px] h-[250px] cursor-pointer "/>
+                        <div class="flex justify-center items-center bg-french-blue w-[250px] h-[2px] mt-[25px] animate-pulse"></div>
+                        <article class="flex justify-center items-center text-eerie text-[24px]">Retrospective is a film and photography sharing blog site. Built with JavaScript, NodeJS, ExpressJS, ReactJSX, MongoDB, Mongoose, Heroku, HTML, CSS, and Bootstrap</article>
+                        <div class="flex justify-center w-[250px] mt-[153px]">
+                            <button class="flex justify-center items-center bg-github bg-contain w-[50px] h-[50px]" onclick="window.location.href='https://github.com/jrwebbjr/Retrospective/blob/main/markdown.md';"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <footer class="flex justify-center flex-col h-screen">
+            <h1 class="text-carrot font-mendl text-7xl">Find Me</h1>
+            <div class="bg-french-blue flex w-[671px] h-[2px] animate-pulse mt-2"></div>
+            <section class="text-mint-cream font-book text-[50px] w-[50vw] flex">
+                <div class="h-[75px] w-[2px] bg-french-blue animate-pulse""></div>
+                <div>&nbsp; LinkedIn &nbsp;</div>
+                <div class="h-[100px] w-[2px] bg-french-blue animate-pulse"></div>
+                <div>&nbsp; GitHub &nbsp;</div>
+                <div class="h-[150px] w-[2px] bg-french-blue animate-pulse""></div>
+                <div>&nbsp; Instagram &nbsp;</div>
+                <div class="h-[150px] w-[2px] bg-french-blue animate-pulse""></div>
+                <div>&nbsp; Twitter &nbsp;</div>
+                <div class="h-[125px] w-[2px] bg-french-blue animate-pulse""></div>
+                <div>&nbsp; Resume &nbsp;</div>
+                <div class="h-[100px] w-[2px] bg-french-blue animate-pulse""></div>
+            </section>
+        </footer>
     </section>
-    <div class="w-[900px] h-screen bg-hs bg-cover bg-left sticky top-0 border-l-[2px] border-french-blue ring-offset-carrot ring-offset-4 ring-4 backdrop-hue-rotate-180">
+    <div class="w-[900px] h-screen bg-hs bg-cover bg-left sticky top-0 border-l-[2px] border-french-blue backdrop-hue-rotate-180 overflow-hidden">
         <div class="w-[450px] h-[34vh] bg-carrot/20 backdrop-contrast-50 hover:animate-pulse"></div>
-        <div class="ml-[450px] w-[450px] h-[34vh] bg-french-blue/20 backdrop-blur hover:animate-bounce"></div>
+        <div class="ml-[450px] w-[450px] h-[34vh] bg-french-blue/20 backdrop-blur hover:animate-pulse"></div>
         <div class="w-[450px] h-[34vh] bg-may-green/30 backdrop-contrast-50 hover:animate-pulse"></div> 
     </div>
 </body>
